@@ -4,60 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
-    <main>
-        <h1 class='título'>Calculadora</h1> 
-        <input type="number" name='n1' id='n1'>
-        <input type="button" value="+" onclick="somar()">
-        <input type="button" value="-" onclick="subtrair()">
-        <input type="number" name='n2' id='n2'>
-        <input type="button" value="*" onclick="multiplicar()"> 
-        <input type="button" value="/" onclick="dividir()">
-        <div id='res'>Resposta:</div>
-    </main>
-    <script>
-        function somar() {
-            var n1 = document.querySelector('input#n1')
-            var n2 = document.querySelector('input#n2')
-            var res = document.querySelector('div#res')
-            var n1n = Number(n1.value)
-            var n2n = Number(n2.value)
-            var s = n1n + n2n
-            res.innerHTML = `${n1n} + ${n2n} = ${s}`
-
-        }
-        function subtrair() {
-            var n1 = document.querySelector('input#n1')
-            var n2 = document.querySelector('input#n2')
-            var res = document.querySelector('div#res')
-            var n1n = Number(n1.value)
-            var n2n = Number(n2.value)
-            var s = n1n - n2n
-            res.innerHTML = `${n1n} - ${n2n} = ${s}`
-
-        }
-        function multiplicar() {
-            var n1 = document.querySelector('input#n1')
-            var n2 = document.querySelector('input#n2')
-            var res = document.querySelector('div#res')
-            var n1n = Number(n1.value)
-            var n2n = Number(n2.value)
-            var s = n1n * n2n
-            res.innerHTML = `${n1n} * ${n2n} = ${s}`
-            
-        }
-        function dividir() {
-            var n1 = document.querySelector('input#n1')
-            var n2 = document.querySelector('input#n2')
-            var res = document.querySelector('div#res')
-            var n1n = Number(n1.value)
-            var n2n = Number(n2.value)
-            var s = n1n / n2n
-            res.innerHTML = `${n1n} / ${n2n} = ${s}`
-            
-        }
-    </script>
+<body onload="verificar()">
+    <header>
+        <h1>Calculadora</h1> 
+    </header>
+    <section>
+        <div id='campo'>
+            <p>
+                1º <input type="number" name='n1' id='n1'>
+                <input type="button" value="+" onclick="somar()">
+                <input type="button" value="-" onclick="subtrair()">
+            </p>
+        </div>
+        <div id='campo'>
+            <p>
+                2º <input type="number" name='n2' id='n2'>
+                <input type="button" value="*" onclick="multiplicar()"> 
+                <input type="button" value="/" onclick="dividir()">
+            </p>
+    </section>
+    <footer>
+        <p>&copy; Alessandro</p>
+    </footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

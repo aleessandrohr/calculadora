@@ -1,21 +1,28 @@
-main {
-    font: normal 16pt Arial;
-    width: 250px;
-    margin: auto;
-    padding: 30px;
-    background-color: black;
+body {
+    background: white;
+    font: normal 15pt Arial;
+}
+
+header {
+    text-align: center;
     color: white;
-    box-shadow: 3px 3px 3px black;
 }
 
-input#n2{
-    margin-top: 20px;
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
-h1.título {
-    color: red;
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
 }
 
-div#res {
-    margin-top: 20px;
+div#campo {
+    text-align: center;
 }
