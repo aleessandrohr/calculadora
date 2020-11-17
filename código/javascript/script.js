@@ -1,44 +1,51 @@
-function verificar() {
-    var hora = new Date()
-    var agora = hora.getHours()
-    if (hora >= 0 && hora < 12) {
-        document.body.style.background = ('#f8d881')
-    } else if (hora >= 12 && hora < 18) {
-        document.body.style.background = ('d5ad8a')
-    } else {
-        document.body.style.background = ('#74909e')
-    }
-}
+var n1 = document.querySelector('input#n1')
+var n2 = document.querySelector('input#n2')
+
 function somar() {
-    var n1 = document.querySelector('input#n1')
-    var n2 = document.querySelector('input#n2')
-    var n1n = Number(n1.value)
-    var n2n = Number(n2.value)
-    var s = n1n + n2n
-    alert(`${n1n} + ${n2n} = ${s}`)
+    if (n1.value.length == 0 | n2.value.length == 0) {
+        alert('Preencha todos os dados.')
+    } else {
+        var n1n = Number(n1.value)
+        var n2n = Number(n2.value)
+        var s = n1n + n2n
+        alert(`O resultado é ${s}.`)
+    }
 
 }
 function subtrair() {
-    var n1 = document.querySelector('input#n1')
-    var n2 = document.querySelector('input#n2')
+    if (n1.value.length == 0 | n2.value.length == 0) {
+        alert('Preencha todos os dados.')
+    } else {
     var n1n = Number(n1.value)
     var n2n = Number(n2.value)
     var s = n1n - n2n
-    alert(`${n1n} - ${n2n} = ${s}`)
+    alert(`O resultado é ${s}.`)
+    }
 }
 function multiplicar() {
-    var n1 = document.querySelector('input#n1')
-    var n2 = document.querySelector('input#n2')
+    if (n1.value.length == 0 | n2.value.length == 0) {
+        alert('Preencha todos os dados.')
+    } else {
     var n1n = Number(n1.value)
     var n2n = Number(n2.value)
     var s = n1n * n2n
-    alert(`${n1n} * ${n2n} = ${s}`)
+    alert(`O resultado é ${s}.`)
+    }
 }
 function dividir() {
-    var n1 = document.querySelector('input#n1')
-    var n2 = document.querySelector('input#n2')
+    if (n1.value.length == 0 | n2.value.length == 0) {
+        alert('Preencha todos os dados.')
+    } else {
     var n1n = Number(n1.value)
     var n2n = Number(n2.value)
     var s = n1n / n2n
-    alert(`${n1n} / ${n2n} = ${s}`)
+    alert(`O resultado é ${s}.`)
+    }
 }
+
+function ver(){
+    alert('Versão 1.2')
+    alert('Melhoria de código e novo layout.')
+    alert('Se quiser me ajuda a melhorar mais ainda o código e o layout :D')
+}
+

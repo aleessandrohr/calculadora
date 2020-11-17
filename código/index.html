@@ -7,23 +7,23 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body onload="verificar()">
+<body>
     <header>
         <h1>Calculadora</h1> 
     </header>
     <section>
         <div id='campo'>
             <p>
-                1º <input type="number" name='n1' id='n1'>
-                <input type="button" value="+" onclick="somar()">
-                <input type="button" value="-" onclick="subtrair()">
-            </p>
-        </div>
-        <div id='campo'>
-            <p>
-                2º <input type="number" name='n2' id='n2'>
-                <input type="button" value="*" onclick="multiplicar()"> 
-                <input type="button" value="/" onclick="dividir()">
+                <input type="number" name='n1' id='n1'>
+                <br>
+                <input type="number" name="n2" id="n2">
+                <br>
+                <input type="button" value="+" onclick="somar()" id='botão'> 
+                <input type="button" value="-" onclick="subtrair()" id='botão'>
+                <input type="button" value="*" onclick="multiplicar()" id='botão'> 
+                <input type="button" value="/" onclick="dividir()" id='botão'>
+                <br>
+                <input type="button" value="Versão" onclick="ver()" id='ver'>
             </p>
     </section>
     <footer>
