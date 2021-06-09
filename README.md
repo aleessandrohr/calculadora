@@ -18,7 +18,7 @@ Abra o cmd ou o powershell (dependendo do sistema operacional utilizado) na past
 ## Execute
 
 ```
-git clone https://github.com/alessandrohenriqueramos/calculadora.git
+git clone https://github.com/alessandroramos13/calculadora.git
 ```
 
 Logo depois abra o arquivo `index.html` dentro da pasta code.
