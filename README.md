@@ -9,8 +9,6 @@ Calculadora simples feita com HTML5, CSS3 e JavaScript.
 
 Para acessar a calculadora é fácil, apenas clique [aqui](http://calculadora.alessandrohenriqueramos.vercel.app/).
 
-<img src="https://media.giphy.com/media/IcJ6n6VJNjRNS/giphy.gif" alt="gif" height="150px" >
-
 ## Obtendo o código
 
 Abra o cmd ou o powershell (dependendo do sistema operacional utilizado) na pasta da aplicação. Logo em seguida, execute os seguintes comandos, em sequência:
